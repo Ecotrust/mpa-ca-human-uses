@@ -27,88 +27,90 @@
         </div>
       </nav>
 
-      <header class="inner container body-container">
+      <header class="inner">
 
-          {% if site.github.is_project_page %}
-            <!-- <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a> -->
-          {% endif %}
+        {% if site.github.is_project_page %}
+          <!-- <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a> -->
+        {% endif %}
 
-          <h1 id="project_title">Establishing a Statewide Baseline and Long-Term MPA Monitoring Program for Commercial and Commercial Passenger Fishing Vessel (CPFV) Fisheries in the State of California</h1>
+        <h1 id="project_title">Establishing a Statewide Baseline and Long-Term MPA Monitoring Program for Commercial and Commercial Passenger Fishing Vessel (CPFV) Fisheries in the State of California</h1>
 
-          {% if site.show_downloads %}
-            <section id="downloads">
-              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
-            </section>
-          {% endif %}
-        </header>
+        {% if site.show_downloads %}
+          <section id="downloads">
+            <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
+          </section>
+        {% endif %}
+      </header>
     </div>
 
     <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="purpose">
-        <div class="inner">
-          <p>People are an integral part of the California coastal ecosystem, and we stand to experience impacts and benefits from the newly implemented marine protected area (MPA) network. To understand the dynamic relationship between people and the environment through the lens of MPAs, we need to understand current and historical uses of coastal resources.</p>
-        </div>
-      </section>
-
-      <section id="focus">
-        <div class="inner">
-          <h2>Focus on Human Uses</h2>
-          <p>Humboldt State University (HSU) researchers, Ecotrust, and Strategic Earth Consulting are supporting the state to assess the baseline socioeconomic conditions of two human uses throughout the state of California and their relationship to the MPA network: commercial and commercial passenger fishing vessel (CPFV) fisheries. Our team will design an approach to monitor socioeconomic conditions related to fishing to inform long-term MPA monitoring. Results of this study will guide the 10-year management review of California’s MPA network.</p>
-        </div>
-      </section>
-
-      <section id="implementation">
-        <div class="inner">
-          <h2>Implementation</h2>
-          <p>The socioeconomic status of California state fisheries is affected by the complex exchange between regulatory, environmental, and socioeconomic factors. MPAs are one of the many influences that could affect spatial fishing patterns and the economic health of California fisheries. Given this complexity, this project aims to assess commercial and CPFV fisheries across the state using temporal, spatial, and place-based approaches. Combined, these approaches will illustrate economic and spatial changes over time and provide insights on how place-based factors, including MPAs, have played a role in driving observed and experienced socioeconomic changes.</p>
-
-          <div class="inner-inner">
-            <h3>Temporal</h3>
-            <p>We will analyze historical economic trends (e.g., participation rates, landings, revenue) in commercial and CPFV fisheries from 1992 to 2020 and use this time-series data to assess patterns and changes observed over time and to describe the current economic status of fisheries.</p>
-
-            <h3>Spatial</h3>
-            <p>We will integrate regional-level spatial data sets since the time of each region's implementation to develop a statewide understanding of spatial fishing patterns and evaluate how these have changed since MPA implementation.</p>
-
-            <h3>Place-based</h3>
-            <p><strong>In Spring and Summer 2020, we will engage with the commercial and CPFV fishing communities in an on-the-ground focus group tour throughout 24 port complexes in California.</strong> To assist this effort, we are developing a ‘Port Community Well-being Assessment Tool’ (i.e., a questionnaire) that will be used to gather quantitative and qualitative information about the health and well-being of California fisheries in the context of MPAs. Questions from the Tool will guide focus group discussions, which will be used to gain a snapshot of the socioeconomic conditions of fisheries in California. The focus groups will provide information about fishermen’s perceptions of MPAs and the ways fishermen have been affected by the MPAs since implementation.</p>
+    <div class="container body-container">
+      <div id="main_content_wrap" class="outer content-wrap">
+        <section id="purpose">
+          <div class="inner">
+            <p>People are an integral part of the California coastal ecosystem, and we stand to experience impacts and benefits from the newly implemented marine protected area (MPA) network. To understand the dynamic relationship between people and the environment through the lens of MPAs, we need to understand current and historical uses of coastal resources.</p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="main_content" class="inner">
-        <!-- {{ content }} -->
+        <section id="focus">
+          <div class="inner">
+            <h2>Focus on Human Uses</h2>
+            <p>Humboldt State University (HSU) researchers, Ecotrust, and Strategic Earth Consulting are supporting the state to assess the baseline socioeconomic conditions of two human uses throughout the state of California and their relationship to the MPA network: commercial and commercial passenger fishing vessel (CPFV) fisheries. Our team will design an approach to monitor socioeconomic conditions related to fishing to inform long-term MPA monitoring. Results of this study will guide the 10-year management review of California’s MPA network.</p>
+          </div>
+        </section>
 
-<!--       <h2>Ports</h2>
+        <section id="implementation">
+          <div class="inner">
+            <h2>Implementation</h2>
+            <p>The socioeconomic status of California state fisheries is affected by the complex exchange between regulatory, environmental, and socioeconomic factors. MPAs are one of the many influences that could affect spatial fishing patterns and the economic health of California fisheries. Given this complexity, this project aims to assess commercial and CPFV fisheries across the state using temporal, spatial, and place-based approaches. Combined, these approaches will illustrate economic and spatial changes over time and provide insights on how place-based factors, including MPAs, have played a role in driving observed and experienced socioeconomic changes.</p>
 
-        <h3>Eureka</h3>
-        <div class="photos">
-          <img src="{{ '/port_photos/Eureka_Photo_1.JPG' }}" />
-          <img src="{{ '/port_photos/Eureka_Photo_2.JPG' }}" />
-          <img src="{{ '/port_photos/Eureka_Photo_3.JPG' }}" />
-          <img src="{{ '/port_photos/Eureka_Photo_4.JPG' }}" />
-          <img src="{{ '/port_photos/Eureka_Photo_5.JPG' }}" />
-          <img src="{{ '/port_photos/Eureka_Photo_6.JPG' }}" />
-        </div>
+            <div class="inner-inner">
+              <h3>Temporal</h3>
+              <p>We will analyze historical economic trends (e.g., participation rates, landings, revenue) in commercial and CPFV fisheries from 1992 to 2020 and use this time-series data to assess patterns and changes observed over time and to describe the current economic status of fisheries.</p>
 
-        <h3>Shelter Cove</h3>
-        <div class="photos">
-          <img src="{{ '/port_photos/Shelter_Cove_Photo_1.jpg' }}" />
-          <img src="{{ '/port_photos/Shelter_Cove_Photo_2.jpg' }}" />
-          <img src="{{ '/port_photos/Shelter_Cove_Photo_3.JPG' }}" />
-          <img src="{{ '/port_photos/Shelter_Cove_Photo_4.JPG' }}" />
-          <img src="{{ '/port_photos/Shelter_Cove_Photo_5.JPG' }}" />
-        </div>
+              <h3>Spatial</h3>
+              <p>We will integrate regional-level spatial data sets since the time of each region's implementation to develop a statewide understanding of spatial fishing patterns and evaluate how these have changed since MPA implementation.</p>
 
-        <h3>South</h3>
-        <div class="photos">
-          <img src="{{ '/port_photos/South_Photo_1.jpg' }}" />
-          <img src="{{ '/port_photos/South_Photo_2.jpg' }}" />
-          <img src="{{ '/port_photos/South_Photo_3.jpg' }}" />
-        </div> -->
+              <h3>Place-based</h3>
+              <p><strong>In Spring and Summer 2020, we will engage with the commercial and CPFV fishing communities in an on-the-ground focus group tour throughout 24 port complexes in California.</strong> To assist this effort, we are developing a ‘Port Community Well-being Assessment Tool’ (i.e., a questionnaire) that will be used to gather quantitative and qualitative information about the health and well-being of California fisheries in the context of MPAs. Questions from the Tool will guide focus group discussions, which will be used to gain a snapshot of the socioeconomic conditions of fisheries in California. The focus groups will provide information about fishermen’s perceptions of MPAs and the ways fishermen have been affected by the MPAs since implementation.</p>
+            </div>
+          </div>
+        </section>
 
-      </section>
+        <section id="main_content" class="inner">
+          <!-- {{ content }} -->
+
+  <!--       <h2>Ports</h2>
+
+          <h3>Eureka</h3>
+          <div class="photos">
+            <img src="{{ '/port_photos/Eureka_Photo_1.JPG' }}" />
+            <img src="{{ '/port_photos/Eureka_Photo_2.JPG' }}" />
+            <img src="{{ '/port_photos/Eureka_Photo_3.JPG' }}" />
+            <img src="{{ '/port_photos/Eureka_Photo_4.JPG' }}" />
+            <img src="{{ '/port_photos/Eureka_Photo_5.JPG' }}" />
+            <img src="{{ '/port_photos/Eureka_Photo_6.JPG' }}" />
+          </div>
+
+          <h3>Shelter Cove</h3>
+          <div class="photos">
+            <img src="{{ '/port_photos/Shelter_Cove_Photo_1.jpg' }}" />
+            <img src="{{ '/port_photos/Shelter_Cove_Photo_2.jpg' }}" />
+            <img src="{{ '/port_photos/Shelter_Cove_Photo_3.JPG' }}" />
+            <img src="{{ '/port_photos/Shelter_Cove_Photo_4.JPG' }}" />
+            <img src="{{ '/port_photos/Shelter_Cove_Photo_5.JPG' }}" />
+          </div>
+
+          <h3>South</h3>
+          <div class="photos">
+            <img src="{{ '/port_photos/South_Photo_1.jpg' }}" />
+            <img src="{{ '/port_photos/South_Photo_2.jpg' }}" />
+            <img src="{{ '/port_photos/South_Photo_3.jpg' }}" />
+          </div> -->
+
+        </section>
+      </div>
     </div>
 
     <!-- FOOTER  -->
