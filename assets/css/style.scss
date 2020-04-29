@@ -1,0 +1,161 @@
+---
+---
+
+@import "{{ site.theme }}";
+@import "./base.css";
+@import "./menus.css";
+
+body {
+  background: #f2f2f2;
+  font-family: 'Georgia', 'Helvetica', sans-serif;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+}
+
+h1#project_title {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 32px;
+  margin: 0 0 20px 0;
+  text-shadow: none;
+}
+
+h2 {
+  background: none;
+  border-bottom: 1px dashed #5f7e82;
+  color: #262927;
+  font-family: sans-serif;
+  font-size: .875em;
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  color: #000;
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.0125em;
+  margin: 1rem 0;
+}
+
+section {
+  padding: 20px 0;
+
+  p {
+    color: #111;
+    font-size: 1.3125em;
+    line-height: 1.5;
+  }
+}
+
+#main_content_wrap {
+  border: none;
+}
+
+#focus {
+  background: #ccd9e6;
+}
+
+#implementation {
+  background: #fff;
+}
+
+.inner-inner {
+  font-size: .875em;
+  padding: 20px;
+
+  p {
+    color: #555;
+    font-size: 1.25em;
+    margin-bottom: 2rem;
+  }
+
+  strong {
+    color: #555;
+  }
+
+}
+
+#header_wrap {
+  background: #7c9a9e;
+
+  a {
+    color: #fff;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .05em;
+    margin: 8px 20px;
+    padding: 6px 12px;
+
+    &.current,
+    &:hover {
+      background: rgba(255,255,255,0.2);
+    }
+  }
+}
+
+nav {
+  background: #5f7e82;
+  border-bottom: 1px solid #dcf7fb;
+  display: block;
+  font-family: sans-serif;
+  text-align: right;
+  width: 100%;
+}
+
+img {
+  padding: 0;
+  max-width: 100%;
+}
+
+.bio {
+  border-bottom: 1px solid #999;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.left {
+  display: inline-block;
+  margin: 0 10% 0 0;
+  width: 30%;
+}
+
+.right {
+  display: inline-block;
+  margin: 0 -4px;
+  vertical-align: top;
+  width: 60%;
+
+  p {
+    font-size: .875em;
+  }
+}
+
+#footer_wrap {
+  background: transparent;
+  color: #666;
+  font-size: .5em;
+
+  p {
+    color: #666;
+  }
+
+  a {
+    color: #333;
+  }
+}
+
+#page-grid {
+  #footer_wrap {
+    a {
+      color: #fff;
+    }
+  }
+}
