@@ -2,8 +2,6 @@
 ---
 
 @import "{{ site.theme }}";
-// @import "./menus.css";
-@import "./ost-data-viewer.css";
 
 body {
   background: #f2f2f2;
@@ -159,3 +157,10 @@ img {
     }
   }
 }
+
+#data-viewer-iframe {
+  height: 100vh;
+  width: 100vw;
+}
+
+@import "./ost-data-viewer.css";
