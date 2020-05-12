@@ -7776,7 +7776,7 @@ button:hover {
 
 .carousel-wrapper .carousel-slide {
     color: #6C6C71;
-    font-family: GothamBold;
+    font-family: 'GothamBold', sans-serif;
     font-size: 14px
 }
 
@@ -7803,23 +7803,23 @@ label {
 }
 
 @font-face {
-    font-family: GothamBold;
-    src: url(./fonts/Gotham-Bold.49169099.otf) format("opentype")
+    font-family: 'GothamBold';
+    src: url(../fonts/Gotham-Bold.otf) format("opentype")
 }
 
 @font-face {
-    font-family: GothamRndBold;
-    src: url(./fonts/GothamRnd-Bold.ae8f19f4.otf) format("opentype")
+    font-family: 'GothamRndBold';
+    src: url(../fonts/GothamRnd-Bold.otf) format("opentype")
 }
 
 @font-face {
-    font-family: GothamBook;
-    src: url(./fonts/Gotham-Book.9019ab71.otf) format("opentype")
+    font-family: 'GothamBook';
+    src: url(../fonts/Gotham-Book.otf) format("opentype")
 }
 
 @font-face {
-    font-family: GothamRndBook;
-    src: url(./fonts/gotham-rounded-book.d31d488d.otf) format("opentype")
+    font-family: 'GothamRndBook';
+    src: url(../fonts/gotham-rounded-book.otf) format("opentype")
 }
 
 .center-text {
@@ -7836,13 +7836,13 @@ body {
     padding: 0;
     font-size: 15px;
     color: #6C6C71;
-    font-family: GothamRndBook
+    font-family: 'GothamRndBook', sans-serif;
 }
 
 h1,
 h2,
 label {
-    font-family: GothamRndBold;
+    font-family: 'GothamRndBold', sans-serif;
     font-weight: 700
 }
 
@@ -7957,7 +7957,7 @@ label {
 
 .top-section p span {
     color: #929297;
-    font-family: GothamBold;
+    font-family: 'GothamBold', sans-serif;
     font-size: 13px
 }
 
@@ -7969,7 +7969,7 @@ label {
 
 .line-1,
 .sub-label {
-    font-family: GothamBook
+    font-family: 'GothamBook', sans-serif;
 }
 
 .top-section p:last-of-type {
@@ -7994,7 +7994,7 @@ label {
 
 .line-2 {
     font-size: 11px;
-    font-family: GothamBold
+    font-family: 'GothamBold', sans-serif;
 }
 
 .wave-border {
@@ -8010,7 +8010,7 @@ label {
 
 [bs-select] {
     font-size: 17px;
-    font-family: GothamRndBook;
+    font-family: 'GothamRndBook', sans-serif;
     background: #E6E8E9;
     height: 62px;
     border: none;
@@ -8055,7 +8055,7 @@ label {
 }
 
 button {
-    font-family: GothamBook;
+    font-family: 'GothamBook', sans-serif;
     min-height: 40px;
     color: #C24118;
     background: #FFF;
@@ -8113,7 +8113,7 @@ button .caret {
 }
 
 .grid-select .faux-link {
-    font-family: GothamBook;
+    font-family: 'GothamBook', sans-serif;
     font-size: 12px;
     color: #C24118
 }
@@ -8142,7 +8142,7 @@ button .caret {
     text-align: left;
     color: #004C72;
     line-height: 1.1;
-    font-family: GothamBold;
+    font-family: 'GothamBold', sans-serif;
     font-size: 14px;
     cursor: pointer
 }
@@ -8391,7 +8391,7 @@ button .caret {
 }
 
 .nav-tabs.centered.top li a {
-    font-family: GothamRndBold;
+    font-family: 'GothamRndBold', sans-serif;
     padding: 6px 12px 4px
 }
 
@@ -8467,7 +8467,7 @@ button .caret {
 
 .nav-pills.centered>li,
 .nav-tabs.centered>li {
-    font-family: GothamBook;
+    font-family: 'GothamBook', sans-serif;
     font-size: 16px;
     background: #FFF;
     margin-bottom: 0;
@@ -8618,25 +8618,25 @@ svg text:nth-child(even) {
 
 .top-5-value {
     font-size: 28px;
-    font-family: GothamBold;
+    font-family: 'GothamBold', sans-serif;
     color: #70AFB6
 }
 
 .top-5-label {
     font-size: 18px;
-    font-family: GothamBook;
+    font-family: 'GothamBook', sans-serif;
     color: #6C6C71
 }
 
 .top-5-sub-label {
     font-size: 11px;
-    font-family: GothamBold;
+    font-family: 'GothamBold', sans-serif;
     color: #6C6C71
 }
 
 .highcharts-title,
 svg {
-    font-family: GothamRndBold
+    font-family: 'GothamRndBold', sans-serif;
 }
 
 [ng-controller=PortSummaryCtrl] .row:nth-of-type(3) label {
@@ -8705,7 +8705,7 @@ svg {
 
 .highcharts-tooltip>span {
     color: #6C6C71;
-    font-family: GothamBold!important;
+    font-family: 'GothamBold', sans-serif !important;
     padding: 1.25em;
     background: #fff;
     text-align: center;
@@ -8744,7 +8744,7 @@ svg {
 }
 
 .highcharts-tooltip>span .value.value-label {
-    font-family: GothamBook;
+    font-family: 'GothamBook', sans-serif;
     font-size: 11px
 }
 
@@ -8752,7 +8752,7 @@ svg {
 .highcharts-tooltip>span .fishery-gear .line-2 {
     font-size: 11px;
     color: #70AFB6;
-    font-family: GothamBook
+    font-family: 'GothamBook', sans-serif;
 }
 
 .stat-box {
@@ -8772,13 +8772,13 @@ svg {
 }
 
 .stat-box .stat-value {
-    font-family: GothamBold;
+    font-family: 'GothamBold', sans-serif;
     font-size: 30px;
     margin-bottom: 0
 }
 
 .stat-box label {
-    font-family: GothamBook;
+    font-family: 'GothamBook', sans-serif;
     color: #6C6C71;
     font-size: 15px;
     margin: 0
@@ -8896,7 +8896,7 @@ svg {
 }
 
 .rzslider {
-    font-family: GothamBold;
+    font-family: 'GothamBold', sans-serif;
     font-size: 18px;
     margin-top: 55px
 }
