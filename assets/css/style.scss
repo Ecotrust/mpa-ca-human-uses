@@ -1,10 +1,9 @@
----
----
-
-@import "{{ site.theme }}";
-
 body {
+  align-items: stretch;
   background: #f2f2f2;
+  display: flex;
+  height: 100vh;
+  flex-flow: column;
   font-family: 'Georgia', 'Helvetica', sans-serif;
 }
 
@@ -78,18 +77,10 @@ section {
 
 }
 
-#header_wrap {
+header {
   background: #7c9a9e;
 
   a {
-    color: #fff;
-    font-family: 'Helvetica', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: .05em;
-    margin: 8px 20px;
-    padding: 6px 12px;
-
     &.current,
     &:hover {
       background: rgba(255,255,255,0.2);
