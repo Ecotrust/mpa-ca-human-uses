@@ -10,6 +10,10 @@ body {
   height: 100vh;
   flex-flow: column;
   font-family: 'Georgia', 'Helvetica', sans-serif;
+
+  main {
+    flex: 5;
+  }
 }
 
 h1 {
@@ -155,8 +159,8 @@ img {
 }
 
 #data-viewer-iframe {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 @import "./ost-data-viewer.css";
