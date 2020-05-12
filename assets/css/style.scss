@@ -14,6 +14,18 @@ body {
   main {
     flex: 5;
   }
+
+  &.page {
+    .nav-tabs.centered.top li {
+      background: transparent;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
 }
 
 h1 {
