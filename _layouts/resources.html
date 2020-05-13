@@ -10,36 +10,32 @@
     {% seo %}
   </head>
 
-  <body>
+  <body class="page">
+
+    <header>
+
+      <nav>
+        <ul class="nav nav-tabs centered top">
+          <li><a href="/mpa-ca-human-uses/">Home</a></li>
+          <li><a href="/mpa-ca-human-uses/bios.html">Our Team</a></li>
+          <li><a href="/mpa-ca-human-uses/resources.html" class="current">Project Resources</a></li>
+          <li><a href="/mpa-ca-human-uses/data-viewer.html">Data Viewer</a></li>
+        </ul>
+      </nav>
+
+    </header>
 
     <main>
-      <!-- HEADER -->
-      <div id="header_wrap" class="outer">
 
-        <nav>
-          <ul class="nav-tabs center top">
-              <li class=""><a href="/mpa-ca-human-uses/" class="pure-menu-link">Home</a></li>
-              <li class="pure-menu-item"><a href="/mpa-ca-human-uses/bios.html" class="pure-menu-link">Our Team</a></li>
-              <li class="pure-menu-item"><a href="/mpa-ca-human-uses/resources.html" class="pure-menu-link current">Project Resources</a></li>
-              <li class="pure-menu-item"><a href="/mpa-ca-human-uses/data-viewer.html" class="pure-menu-link">Data Viewer</a></li>
-          </ul>
-        </nav>
-
-        <header class="inner">
-
-            {% if site.github.is_project_page %}
-              <!-- <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a> -->
-            {% endif %}
-
-            <h1 id="project_title">Project Resources</h1>
-
-        </header>
-
+      <div class="navbar-default">
+        <div class="inner">
+          <h1 class="center-text">Project Resources</h1>
+        </div>
       </div>
 
-      <div id="main_content_wrap" class="outer">
+      <div class="inner">
 
-        <section id="main_content" class="inner">
+        <section id="main_content">
             <h2>Materials from Key Communicators Webinar to Guide the Design of a 'Port Community Well-being Assessment Tool' and Focus Group Discussions - January 31, 2020</h2>
             <p><a href="/resources/01312020/Webinar_Agenda.pdf">Webinar Agenda</a></p>
             <p><a href="/resources/01312020/Webinar_Slide_Deck.pdf">Webinar Slide Deck</a></p>
@@ -65,6 +61,6 @@
           ga('send', 'pageview');
         </script>
       {% endif %}
-      
+
   </body>
 </html>
