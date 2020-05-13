@@ -9,7 +9,7 @@ body {
   display: flex;
   height: 100vh;
   flex-flow: column;
-  font-family: 'Georgia', 'Helvetica', sans-serif;
+  font-family: 'GothamRndBook', 'Helvetica', sans-serif;
 
   main {
     flex: 5;
@@ -59,10 +59,11 @@ h1 {
   margin: 0 0 20px 0;
 }
 
-h1#project_title {
+h1 {
   color: #fff;
-  font-family: sans-serif;
+  font-family: 'GothamRndBold', sans-serif;
   font-size: 32px;
+  font-weight: bold;
   margin: 0 0 20px 0;
   text-shadow: none;
 }
@@ -71,16 +72,16 @@ h2 {
   background: none;
   border-bottom: 1px dashed #5f7e82;
   color: #262927;
-  font-family: sans-serif;
+  font-family: 'GothamRndBold', sans-serif;
   font-size: .875em;
-  font-weight: 900;
+  font-weight: bold;
   letter-spacing: 0.025em;
   margin-bottom: 2rem;
 }
 
 h3 {
   color: #000;
-  font-family: sans-serif;
+  font-family: 'GothamRndBold', sans-serif;
   font-size: 1em;
   font-weight: bold;
   letter-spacing: 0.0125em;
