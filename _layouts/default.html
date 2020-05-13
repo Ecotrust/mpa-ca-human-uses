@@ -10,61 +10,40 @@
     {% seo %}
   </head>
 
-  <body>
+  <body class="page">
 
-    <header class="scroll-header navbar navbar-default wrap">
-        <h1 class="center-text">MPA</h1>
-
-        <div id="top-header" class="top-section">
-            <div class="row section">
-                <div class="col-sm-5">
-                    <img src="{{ '/port_photos/Eureka_Photo_1.JPG' }}" class="hero" />
-                </div>
-                <div class="col-sm-7">
-                    <h2>Establishing a Statewide Baseline and Long-Term MPA Monitoring Program for Commercial and Commercial Passenger Fishing Vessel (CPFV) Fisheries in the State of California</h2>
-
-                    <p>People are an integral part of the California coastal ecosystem, and we stand to experience impacts and benefits from the newly implemented marine protected area (MPA) network. To understand the dynamic relationship between people and the environment through the lens of MPAs, we need to understand current and historical uses of coastal resources.</p>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div id="header_wrap" class="outer">
+    <header>
 
       <nav>
-        <div id="project_tagline">
-          <div class="pure-menu pure-menu-horizontal">
-              <ul class="pure-menu-list">
-                  <li class="pure-menu-item pure-menu-selected"><a href="/mpa-ca-human-uses/" class="pure-menu-link current">Home</a></li>
-                  <li class="pure-menu-item"><a href="/mpa-ca-human-uses/bios.html" class="pure-menu-link">Our Team</a></li>
-                  <li class="pure-menu-item"><a href="/mpa-ca-human-uses/resources.html" class="pure-menu-link">Project Resources</a></li>
-                  <li class="pure-menu-item"><a href="/mpa-ca-human-uses/data-viewer.html" class="pure-menu-link">Data Viewer</a></li>
-              </ul>
-          </div>
-        </div>
+        <ul class="nav nav-tabs centered top">
+          <li><a href="/mpa-ca-human-uses/" class="current">Home</a></li>
+          <li><a href="/mpa-ca-human-uses/bios.html">Our Team</a></li>
+          <li><a href="/mpa-ca-human-uses/resources.html">Project Resources</a></li>
+          <li><a href="/mpa-ca-human-uses/data-viewer.html">Data Viewer</a></li>
+        </ul>
       </nav>
 
-
-    </div>
+    </header>
 
     <!-- MAIN CONTENT -->
-    <div class="container body-container">
-      <div id="main_content_wrap" class="outer content-wrap">
-        <section id="purpose">
+    <main>
+
+      <div class="navbar-default">
           <div class="inner">
-            <p></p>
+            <h1 class="center-text">Establishing a Statewide Baseline and Long-Term MPA Monitoring Program for Commercial and Commercial Passenger Fishing Vessel (CPFV) Fisheries in the State of California</h1>
           </div>
-        </section>
+      </div>
+
+      <div class="inner">
+
+        <p>People are an integral part of the California coastal ecosystem, and we stand to experience impacts and benefits from the newly implemented marine protected area (MPA) network. To understand the dynamic relationship between people and the environment through the lens of MPAs, we need to understand current and historical uses of coastal resources.</p>
 
         <section id="focus">
-          <div class="inner">
             <h2>Focus on Human Uses</h2>
             <p>Humboldt State University (HSU) researchers, Ecotrust, and Strategic Earth Consulting are supporting the state to assess the baseline socioeconomic conditions of two human uses throughout the state of California and their relationship to the MPA network: commercial and commercial passenger fishing vessel (CPFV) fisheries. Our team will design an approach to monitor socioeconomic conditions related to fishing to inform long-term MPA monitoring. Results of this study will guide the 10-year management review of California’s MPA network.</p>
-          </div>
         </section>
 
         <section id="implementation">
-          <div class="inner">
             <h2>Implementation</h2>
             <p>The socioeconomic status of California state fisheries is affected by the complex exchange between regulatory, environmental, and socioeconomic factors. MPAs are one of the many influences that could affect spatial fishing patterns and the economic health of California fisheries. Given this complexity, this project aims to assess commercial and CPFV fisheries across the state using temporal, spatial, and place-based approaches. Combined, these approaches will illustrate economic and spatial changes over time and provide insights on how place-based factors, including MPAs, have played a role in driving observed and experienced socioeconomic changes.</p>
 
@@ -78,43 +57,10 @@
               <h3>Place-based</h3>
               <p><strong>In Spring and Summer 2020, we will engage with the commercial and CPFV fishing communities in an on-the-ground focus group tour throughout 24 port complexes in California.</strong> To assist this effort, we are developing a ‘Port Community Well-being Assessment Tool’ (i.e., a questionnaire) that will be used to gather quantitative and qualitative information about the health and well-being of California fisheries in the context of MPAs. Questions from the Tool will guide focus group discussions, which will be used to gain a snapshot of the socioeconomic conditions of fisheries in California. The focus groups will provide information about fishermen’s perceptions of MPAs and the ways fishermen have been affected by the MPAs since implementation.</p>
             </div>
-          </div>
         </section>
 
-        <section id="main_content" class="inner">
-          <!-- {{ content }} -->
-
-  <!--       <h2>Ports</h2>
-
-          <h3>Eureka</h3>
-          <div class="photos">
-            <img src="{{ '/port_photos/Eureka_Photo_1.JPG' }}" />
-            <img src="{{ '/port_photos/Eureka_Photo_2.JPG' }}" />
-            <img src="{{ '/port_photos/Eureka_Photo_3.JPG' }}" />
-            <img src="{{ '/port_photos/Eureka_Photo_4.JPG' }}" />
-            <img src="{{ '/port_photos/Eureka_Photo_5.JPG' }}" />
-            <img src="{{ '/port_photos/Eureka_Photo_6.JPG' }}" />
-          </div>
-
-          <h3>Shelter Cove</h3>
-          <div class="photos">
-            <img src="{{ '/port_photos/Shelter_Cove_Photo_1.jpg' }}" />
-            <img src="{{ '/port_photos/Shelter_Cove_Photo_2.jpg' }}" />
-            <img src="{{ '/port_photos/Shelter_Cove_Photo_3.JPG' }}" />
-            <img src="{{ '/port_photos/Shelter_Cove_Photo_4.JPG' }}" />
-            <img src="{{ '/port_photos/Shelter_Cove_Photo_5.JPG' }}" />
-          </div>
-
-          <h3>South</h3>
-          <div class="photos">
-            <img src="{{ '/port_photos/South_Photo_1.jpg' }}" />
-            <img src="{{ '/port_photos/South_Photo_2.jpg' }}" />
-            <img src="{{ '/port_photos/South_Photo_3.jpg' }}" />
-          </div> -->
-
-        </section>
       </div>
-    </div>
+    </main>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
