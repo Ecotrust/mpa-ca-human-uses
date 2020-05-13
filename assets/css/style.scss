@@ -56,14 +56,10 @@ body {
 }
 
 h1 {
-  margin: 0 0 20px 0;
-}
-
-h1 {
-  color: #fff;
+  color: #004C72;
   font-family: 'GothamRndBold', sans-serif;
   font-size: 32px;
-  font-weight: bold;
+  font-weight: normal;
   margin: 0 0 20px 0;
   text-shadow: none;
 }
@@ -74,7 +70,7 @@ h2 {
   color: #262927;
   font-family: 'GothamRndBold', sans-serif;
   font-size: .875em;
-  font-weight: bold;
+  font-weight: normal;
   letter-spacing: 0.025em;
   margin-bottom: 2rem;
 }
@@ -83,9 +79,15 @@ h3 {
   color: #000;
   font-family: 'GothamRndBold', sans-serif;
   font-size: 1em;
-  font-weight: bold;
+  font-weight: normal;
   letter-spacing: 0.0125em;
   margin: 1rem 0;
+}
+
+.navbar {
+  h1 {
+    padding: 60px 0;
+  }
 }
 
 section {
