@@ -5,13 +5,15 @@
 
 body {
   align-items: stretch;
-  background: #f2f2f2;
+  background: #c2dde0;
+  color: #6C6C71;
   display: flex;
   height: 100vh;
   flex-flow: column;
   font-family: 'GothamRndBook', 'Helvetica', sans-serif;
 
   main {
+    background: rgba(194,221,224,.49);
     flex: 5;
   }
 
