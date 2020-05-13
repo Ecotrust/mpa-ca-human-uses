@@ -10,37 +10,26 @@
     {% seo %}
   </head>
 
-  <body id="page-grid">
+  <body id="page-grid page">
+
     <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <nav>
-          <div id="project_tagline">
-            <div class="pure-menu pure-menu-horizontal">
-                <ul class="pure-menu-list">
-                    <li class="pure-menu-item"><a href="/mpa-ca-human-uses/" class="pure-menu-link">Home</a></li>
-                    <li class="pure-menu-item pure-menu-selected"><a href="/mpa-ca-human-uses/bios.html" class="pure-menu-link current">Our Team</a></li>
-                    <li class="pure-menu-item"><a href="/mpa-ca-human-uses/resources.html" class="pure-menu-link">Project Resources</a></li>
-                    <li class="pure-menu-item"><a href="/mpa-ca-human-uses/data-viewer.html" class="pure-menu-link">Data Viewer</a></li>
-                </ul>
-            </div>
-          </div>
-        </nav>
+    <header>
 
-        <header class="inner">
+      <nav>
+        <ul class="nav nav-tabs centered top">
+          <li><a href="/mpa-ca-human-uses/">Home</a></li>
+          <li><a href="/mpa-ca-human-uses/bios.html" class="current">Our Team</a></li>
+          <li><a href="/mpa-ca-human-uses/resources.html">Project Resources</a></li>
+          <li><a href="/mpa-ca-human-uses/data-viewer.html">Data Viewer</a></li>
+        </ul>
+      </nav>
 
-          {% if site.github.is_project_page %}
-            <!-- <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a> -->
-          {% endif %}
+    </header>
 
-          <h1 id="project_title">Establishing a Statewide Baseline and Long-Term MPA Monitoring Program for Commercial and Commercial Passenger FIshing Vessel (CPFV) Fisheries in the State of California</h1>
+    <div class="navbar-default">
 
-          {% if site.show_downloads %}
-            <section id="downloads">
-              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
-            </section>
-          {% endif %}
-        </header>
+        <h1 class="center-text">Establishing a Statewide Baseline and Long-Term MPA Monitoring Program for Commercial and Commercial Passenger FIshing Vessel (CPFV) Fisheries in the State of California</h1>
+
     </div>
 
     <!-- MAIN CONTENT -->
