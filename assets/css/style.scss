@@ -15,6 +15,10 @@ body {
   main {
     background: rgba(194,221,224,.49);
     flex: 5;
+
+    .inner {
+      max-width: 900px;
+    }
   }
 
   &.page {
