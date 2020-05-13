@@ -5,7 +5,7 @@
 
 body {
   align-items: stretch;
-  background: #c2dde0;
+  background: rgba(194,221,224,.49);
   color: #6C6C71;
   display: flex;
   height: 100vh;
@@ -92,6 +92,7 @@ h3 {
 
 .navbar {
   h1 {
+    background: transparent;
     padding: 60px 0;
   }
 }
