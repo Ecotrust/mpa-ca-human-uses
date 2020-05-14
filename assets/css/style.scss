@@ -59,6 +59,7 @@ body {
 
             &:hover,
             &.current {
+              background-color: #fff;
               color: #004C72;
             }
           }
@@ -101,7 +102,9 @@ a {
   color: #337ab7;
 }
 
-.navbar {
+.navbar-default {
+  background-color: #fff;
+
   h1 {
     background: transparent;
     padding: 60px 0;
@@ -149,7 +152,6 @@ header {
 
     &.current,
     &:hover {
-      background: #f8f8f8;
       color: #004C72;
       text-decoration: none;
     }
@@ -172,14 +174,14 @@ img {
 .left {
   display: inline-block;
   margin: 0 10% 0 0;
-  width: 30%;
+  width: 22%;
 }
 
 .right {
   display: inline-block;
   margin: 0 -4px;
   vertical-align: top;
-  width: 60%;
+  width: 68%;
 
   p {
     font-size: .875em;
