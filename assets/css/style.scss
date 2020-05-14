@@ -112,6 +112,22 @@ a {
   }
 }
 
+
+header {
+  background: #004C72;
+  padding: 16px 0 0;
+
+  a {
+    color: #fff;
+
+    &.current,
+    &:hover {
+      color: #004C72;
+      text-decoration: none;
+    }
+  }
+}
+
 section {
   padding: 20px 0;
 }
@@ -126,6 +142,10 @@ section {
 
 #implementation {
   background: #f5f6ef;
+
+  p {
+    margin-bottom: 3rem;
+  }
 }
 
 .inner-inner {
@@ -142,21 +162,6 @@ section {
     // color: #555;
   }
 
-}
-
-header {
-  background: #004C72;
-  padding: 16px 0 0;
-
-  a {
-    color: #fff;
-
-    &.current,
-    &:hover {
-      color: #004C72;
-      text-decoration: none;
-    }
-  }
 }
 
 img {
