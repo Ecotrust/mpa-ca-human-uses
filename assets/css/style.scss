@@ -22,10 +22,10 @@ body {
       font-size: 1.1em;
       line-height: 1.5;
     }
+  }
 
-    .inner {
-      max-width: 960px;
-    }
+  .inner {
+    max-width: 960px;
   }
 
   &.page {
@@ -190,16 +190,16 @@ img {
 }
 
 #footer_wrap {
-  background: transparent;
-  color: #666;
-  font-size: .5em;
+  background: #004C72;
+  color: #fff;
+  font-size: .75em;
 
   p {
-    color: #666;
+    color: #fff;
   }
 
   a {
-    color: #333;
+    color: #fff;
   }
 }
 
