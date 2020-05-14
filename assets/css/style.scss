@@ -17,6 +17,12 @@ body {
     font-family: inherit;
     flex: 5;
 
+    p {
+      color: #6C6C71;
+      font-size: 1.1em;
+      line-height: 1.5;
+    }
+
     .inner {
       max-width: 960px;
     }
@@ -104,12 +110,6 @@ a {
 
 section {
   padding: 20px 0;
-
-  p {
-    color: #111;
-    font-size: 1.3125em;
-    line-height: 1.5;
-  }
 }
 
 #main_content_wrap {
