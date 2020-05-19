@@ -32,6 +32,14 @@
 
     </main>
 
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        {% if site.github.is_project_page %}
+        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="https://ecotrust.org">Ecotrust</a></p>
+        {% endif %}
+      </footer>
+    </div>
+
 
     {% if site.google_analytics %}
     <script>
