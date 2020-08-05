@@ -230,7 +230,10 @@ img {
 }
 
 .map-choices-wrap {
-  height: 100vh;
+
+  #interactive-map.show {
+    height: 100vh;
+  }
 }
 
 #data-viewer-iframe {
