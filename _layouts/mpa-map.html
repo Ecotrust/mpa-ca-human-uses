@@ -135,12 +135,12 @@
         }
 
         document.getElementById('show-region-maps').addEventListener('click', function(event) {
-            document.querySelector('selected').classList.remove('selected');
+            document.querySelector('.selected').classList.remove('selected');
             event.target.classList.add('selected')
             showRegionalMaps();
         })
         document.getElementById('show-all-map').addEventListener('click', function(event) {
-            document.querySelector('selected').classList.remove('selected');
+            document.querySelector('.selected').classList.remove('selected');
             event.target.classList.add('selected')
             showInteractiveMap();
         })
