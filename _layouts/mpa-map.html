@@ -44,7 +44,7 @@
             <nav>
                 <ul class="nav nav-tabs centered top secondary">
                     <li><a href="#interactive-map" onclick="showInteractiveMap" class="selected">All MPAs Map</a></li>
-                    <li><a href="#regional-map" onclick="showRegionalMaps">MPAs by Region Maps</a></li>
+                    <li><a href="#regional-maps" onclick="showRegionalMaps">MPAs by Region Maps</a></li>
                 </ul>
             </nav>
 
@@ -111,11 +111,11 @@
     </main>
 
     <script>
-        const showInteractiveMap = function(event) {
+        function showInteractiveMap(event) {
             event.preventDefault();
 
-            const interactiveMap = document.getElementById('interactive-map');
-            const regionalMaps = document.getElementById('regional-maps');
+            let interactiveMap = document.getElementById('interactive-map');
+            let regionalMaps = document.getElementById('regional-maps');
 
             interactiveMap.classList.add('show');
             interactiveMap.classList.remove('hide');
@@ -124,11 +124,11 @@
             regionalMaps.classList.remove('show');
         }
 
-        const showRegionalMaps = function(event) {
+        function showRegionalMaps(event) {
             event.preventDefault();
 
-            const interactiveMap = document.getElementById('interactive-map');
-            const regionalMaps = document.getElementById('regional-maps');
+            let interactiveMap = document.getElementById('interactive-map');
+            let regionalMaps = document.getElementById('regional-maps');
 
             interactiveMap.classList.add('hide');
             interacriveMap.classList.remove('show');
