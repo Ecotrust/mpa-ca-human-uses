@@ -37,7 +37,7 @@
 
         <div>
             <nav>
-                <ul class="nav nav-tabs centered secondary">
+                <ul class="nav nav-tabs centered top secondary">
                     <li><a href="#interactive-map" onclick="showInteractiveMap" class="selected">All MPAs Map</a></li>
                     <li><a href="#regional-map" onclick="showRegionalMaps">MPAs by Region Maps</a></li>
                 </ul>
@@ -106,30 +106,31 @@
     </main>
 
     <script>
-        window.addEventListener('load', function() {
+        const showInteractiveMap = function(event) {
+            event.preventDefault();
+
             const interactiveMap = document.getElementById('interactive-map');
             const regionalMaps = document.getElementById('regional-maps');
 
-            const showInteractiveMap = function(event) {
-                event.preventDefault();
+            interactiveMap.classList.add('show');
+            interactiveMap.classList.remove('hide');
 
-                interactiveMap.classList.add('show');
-                interactiveMap.classList.remove('hide');
+            regionalMaps.classList.add('hide');
+            regionalMaps.classList.remove('show');
+        }
 
-                regionalMaps.classList.add('hide');
-                regionalMaps.classList.remove('show');
-            }
+        const showRegionalMaps = function(event) {
+            event.preventDefault();
 
-            const showRegionalMaps = function(event) {
-                event.preventDefault();
+            const interactiveMap = document.getElementById('interactive-map');
+            const regionalMaps = document.getElementById('regional-maps');
 
-                interactiveMap.classList.add('hide');
-                interacriveMap.classList.remove('show');
+            interactiveMap.classList.add('hide');
+            interacriveMap.classList.remove('show');
 
-                regionalMaps.classList.add('show');
-                regionalMaps.classList.remove('hide');
-            }
-        });
+            regionalMaps.classList.add('show');
+            regionalMaps.classList.remove('hide');
+        }
     </script>
 
     {% if site.google_analytics %}
