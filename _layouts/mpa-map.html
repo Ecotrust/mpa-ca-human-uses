@@ -21,7 +21,7 @@
                 <li><a href="{{ site.baseurl }}/bios.html">Our Team</a></li>
                 <li><a href="{{ site.baseurl }}/resources.html">Project Resources</a></li>
                 <li><a href="{{ site.baseurl }}/data-viewer.html">Data Viewer</a></li>
-                <li><a href="{{ site.baseurl }}/mpa-map.html" class="current">MPA Map</a></li>
+                <li><a href="{{ site.baseurl }}/mpa-map.html" class="current">MPA Maps</a></li>
             </ul>
         </nav>
 
@@ -29,10 +29,110 @@
 
     <main>
 
-        <iframe id="data-viewer-iframe" title="California Marine Protected Areas" src="https://ecotrust.maps.arcgis.com/apps/Embed/index.html?webmap=ae257759d0f64874930e688bb8142440&zoom=true&previewImage=false&scale=true&search=true&details=true&legendlayers=true&active_panel=legend&basemap_gallery=true&disable_scroll=true"></iframe>
+        <div class="navbar-default">
+            <div class="inner">
+                <h1 class="center-text">California Marine Protected Areas Maps</h1>
+            </div>
+        </div>
 
+        <div class="inner">
+            <section>
+                <nav>
+                    <ul class="nav nav-tabs centered top">
+                        <li><a href="#interactive-map" onclick="showInteractiveMap">All MPAs Map</a></li>
+                        <li><a href="#regional-map" onclick="showRegionalMaps">MPAs by Region Maps</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div id="focus">
+
+            <div id="interactive-map" class="show">
+                <iframe id="data-viewer-iframe" title="California Marine Protected Areas" src="https://ecotrust.maps.arcgis.com/apps/Embed/index.html?webmap=ae257759d0f64874930e688bb8142440&zoom=true&previewImage=false&scale=true&search=true&details=true&legendlayers=true&active_panel=legend&basemap_gallery=true&disable_scroll=true"></iframe>
+            </div>
+
+            <div id="regional-maps" class="hide">
+                <div class="inner">
+                    <section>
+                      <h2>California Marine Protected Areas</h2>
+                      <div class="bio">
+                        <div class="left">
+                          <h2>North Central Coast</h2>
+                          <p><a href="{{ site.baseurl }}/resources/06262020/NCC_20200709.pdf">California Marine Protected Area: North Central Coast PDF</a></p>
+                        </div>
+                        <div class="right">
+                          <a href="{{ site.baseurl }}/resources/06262020/NCC_20200709.png" target="_blank"><img src="{{ site.baseurl }}/resources/06262020/NCC_20200709.png" /></a>
+                        </div>
+                      </div>
+                      <div class="bio">
+                        <div class="left">
+                          <h2>Central Coast</h2>
+                          <p><a href="{{ site.baseurl }}/resources/06262020/CC_20200708.pdf">California Marine Protected Area: Central Coast PDF</a></p>
+                        </div>
+                        <div class="right">
+                          <a href="{{ site.baseurl }}/resources/06262020/CC_20200708.png" target="_blank"><img src="{{ site.baseurl }}/resources/06262020/CC_20200708.png" /></a>
+                        </div>
+                      </div>
+                      <div class="bio">
+                        <div class="left">
+                          <h2>North Coast</h2>
+                          <p><a href="{{ site.baseurl }}/resources/06262020/NC_20200708.pdf">California Marine Protected Area: North Coast PDF</a></p>
+                        </div>
+                        <div class="right">
+                          <a href="{{ site.baseurl }}/resources/06262020/NC_20200708.png" target="_blank"><img src="{{ site.baseurl }}/resources/06262020/NC_20200708.png" /></a>
+                        </div>
+                      </div>
+                      <div class="bio">
+                        <div class="left">
+                          <h2>South Coast</h2>
+                          <p><a href="{{ site.baseurl }}/resources/06262020/SC_20200708.pdf">California Marine Protected Area: South Coast PDF</a></p>
+                        </div>
+                        <div class="right">
+                          <a href="{{ site.baseurl }}/resources/06262020/SC_20200708.png" target="_blank"><img src="{{ site.baseurl }}/resources/06262020/SC_20200708.png" /></a>
+                        </div>
+                      </div>
+                      <div class="bio">
+                        <div class="left">
+                          <h2>San Francisco Bay</h2>
+                          <p><a href="{{ site.baseurl }}/resources/06262020/SFB_20200708.pdf">California Marine Protected Area: San Francisco Bay PDF</a></p>
+                        </div>
+                        <div class="right">
+                          <a href="{{ site.baseurl }}/resources/06262020/SFB_20200708.png" target="_blank"><img src="{{ site.baseurl }}/resources/06262020/SFB_20200708.png" /></a>
+                        </div>
+                      </div>
+                    </section>
+                </div>
+            </div>
+        </div>
     </main>
 
+    <script>
+        window.on('load', function() {
+            const interactiveMap = document.getElementById('interactive-map');
+            const regionalMaps = document.getElementById('regional-maps');
+
+            const showInteractiveMap = function(event) {
+                event.preventDefault();
+
+                interactiveMap.classList.add('show');
+                interactiveMap.classList.remove('hide');
+
+                regionalMaps.classList.add('hide');
+                regionalMaps.classList.remove('show');
+            }
+
+            const showRegionalMaps = function(event) {
+                event.preventDefault();
+
+                interactiveMap.classList.add('hide');
+                interacriveMap.classList.remove('show');
+
+                regionalMaps.classList.add('show');
+                regionalMaps.classList.remove('hide');
+            }
+        });
+    </script>
 
     {% if site.google_analytics %}
     <script>
