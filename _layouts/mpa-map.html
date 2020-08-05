@@ -35,15 +35,13 @@
             </div>
         </div>
 
-        <div class="inner">
-            <section>
-                <nav>
-                    <ul class="nav nav-tabs centered top">
-                        <li><a href="#interactive-map" onclick="showInteractiveMap">All MPAs Map</a></li>
-                        <li><a href="#regional-map" onclick="showRegionalMaps">MPAs by Region Maps</a></li>
-                    </ul>
-                </nav>
-            </section>
+        <div>
+            <nav>
+                <ul class="nav nav-tabs centered secondary">
+                    <li><a href="#interactive-map" onclick="showInteractiveMap" class="selected">All MPAs Map</a></li>
+                    <li><a href="#regional-map" onclick="showRegionalMaps">MPAs by Region Maps</a></li>
+                </ul>
+            </nav>
         </div>
 
         <div id="focus">
@@ -108,7 +106,7 @@
     </main>
 
     <script>
-        window.on('load', function() {
+        window.addEventListener('load', function() {
             const interactiveMap = document.getElementById('interactive-map');
             const regionalMaps = document.getElementById('regional-maps');
 

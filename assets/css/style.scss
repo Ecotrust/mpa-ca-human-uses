@@ -65,6 +65,19 @@ body {
           }
         }
       }
+
+      .nav-tabs.centered.secondary {
+        li {
+          a {
+            background-color: #f3f4f6;
+            color: #004C72;
+
+            &.selected {
+              background-color: #fff;
+            }
+          }
+        }
+      }
     }
   }
 }
