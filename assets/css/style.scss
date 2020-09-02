@@ -114,6 +114,15 @@ h3 {
 
 a {
   color: #337ab7;
+
+  &.unlinked {
+    color: #ccc;
+    pointer-events: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .navbar-default {
